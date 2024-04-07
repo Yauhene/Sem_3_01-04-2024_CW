@@ -13,7 +13,6 @@ public class MyCollection<T> {
     private int currentIndex = 0;
 
     MyCollection() {
-
         value = new Object[10];
     }
 
