@@ -1,4 +1,4 @@
-package Sem_3_HomeWork.PersonTask;
+package Sem_3_HomeWork.Task_1;
 
 public class Worker implements Person {
     @Override

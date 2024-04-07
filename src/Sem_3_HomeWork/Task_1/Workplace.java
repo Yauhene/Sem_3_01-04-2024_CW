@@ -1,21 +1,21 @@
-package Sem_3_HomeWork.PersonTask;
+package Sem_3_HomeWork.Task_1;
 
 import java.util.*;
 
-public class Club<T extends Person> {
+public class Workplace<T extends Person> {
     T[] arrayT;
     MyCollectionIterator<T> iterator;
 
-    public Club(T[] arrayT) {
+    public Workplace(T[] arrayT) {
         this.arrayT = arrayT;
         this.iterator = new MyCollectionIterator<>(this.arrayT);
     }
 
     public void start() {
         for (int i = 0; i < arrayT.length; i++) {
-            System.out.print("Персонаж " + (i+1) + ": " + arrayT[i].getClass().getSimpleName() + ". ");
-            System.out.print("Расслабься, чувак!  - ");
-            arrayT[i].haveRest();
+            System.out.print("Персонаж " + (i + 1) + ": " + arrayT[i].getClass().getSimpleName() + ". ");
+            System.out.print("Арбайтн! Солнце еще высоко!  - ");
+            arrayT[i].doWork();
         }
     }
     public class MyCollectionIterator<T> {
